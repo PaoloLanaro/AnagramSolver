@@ -8,4 +8,6 @@ add_executable(WordGames
         lib/src/EnglishDictionary.cpp
         lib/include/EnglishDictionary.h
         lib/include/Permutation.h
-        lib/src/Permutation.cpp)
+        lib/src/Permutation.cpp
+        lib/include/MergeSortString.h
+        lib/src/MergeSortString.cpp)

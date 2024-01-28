@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <string>
+#include "./lib/include/MergeSortString.h"
 
 using std::string;
 using std::cout;
@@ -18,6 +18,6 @@ int main(int argc, char *argv[]) {
     }
     string origin = argv[1];
     cout << "Pre sort: " << origin << endl;
-    std::sort(origin.begin(), origin.end());
-    cout << "After sort: " << origin << endl;
+    string sorted = MergeSortString::lexicographicSort(origin);
+    cout << "After sort: " << sorted << endl;
 }
