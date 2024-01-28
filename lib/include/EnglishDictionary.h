@@ -2,8 +2,8 @@
 // Created by Paolo Lanaro on 1/27/2024.
 //
 
-#ifndef ANAGRAMSOLVER_ENGLISHDICTIONARY_H
-#define ANAGRAMSOLVER_ENGLISHDICTIONARY_H
+#ifndef WORDGAMES_ENGLISHDICTIONARY_H
+#define WORDGAMES_ENGLISHDICTIONARY_H
 
 #include <unordered_map>
 #include <string>
@@ -19,4 +19,4 @@ public:
     std::vector<std::string> searchForAnagrams(const std::string& key);
 };
 
-#endif //ANAGRAMSOLVER_ENGLISHDICTIONARY_H
+#endif //WORDGAMES_ENGLISHDICTIONARY_H

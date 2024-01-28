@@ -1,5 +1,5 @@
 //
-// Created by lanaro on 1/27/2024.
+// Created by Paolo Lanaro on 1/27/2024.
 //
 
 #include <iostream>
@@ -20,6 +20,4 @@ int main(int argc, char *argv[]) {
     cout << "Pre sort: " << origin << endl;
     std::sort(origin.begin(), origin.end());
     cout << "After sort: " << origin << endl;
-
-
 }

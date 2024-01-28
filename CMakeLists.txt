@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
-project(AnagramSolver)
+project(WordGames)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(AnagramSolver
+add_executable(WordGames
         driver.cpp
         lib/src/EnglishDictionary.cpp
         lib/include/EnglishDictionary.h
