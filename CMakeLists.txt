@@ -4,4 +4,8 @@ project(AnagramSolver)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(AnagramSolver
-        driver.cpp)
+        driver.cpp
+        lib/src/EnglishDictionary.cpp
+        lib/include/EnglishDictionary.h
+        lib/include/Permutation.h
+        lib/src/Permutation.cpp)
