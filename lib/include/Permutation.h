@@ -10,9 +10,11 @@
 
 class Permutation {
 private:
+    static void permutationHelper(std::string &permutation, const int &index, const int &end,
+                                  std::vector<std::string> &permutations);
 
 public:
-    std::vector<std::string> getPermutations(std::string word);
+    static std::vector<std::string> getPermutations(const std::string &word);
 };
 
 #endif //WORDGAMES_PERMUTATION_H

@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include "./lib/include/MergeSortString.h"
+#include "./lib/include/Permutation.h"
 
 using std::string;
 using std::cout;
@@ -20,4 +21,11 @@ int main(int argc, char *argv[]) {
     cout << "Pre sort: " << origin << endl;
     string sorted = MergeSortString::lexicographicSort(origin);
     cout << "After sort: " << sorted << endl;
+
+    std::vector<string> permutations = Permutation::getPermutations("DBCA");
+
+    for (int i = 0; i < permutations.size(); ++i) {
+        cout << "Permutation " << i << ": " << permutations[i] << endl;
+    }
+
 }
