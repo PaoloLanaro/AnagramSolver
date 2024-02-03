@@ -3,8 +3,8 @@
 //
 #include "../include/MergeSortString.h"
 
-#include <vector>
 #include <sstream>
+#include <cmath>
 
 using std::string;
 

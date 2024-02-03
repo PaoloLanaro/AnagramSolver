@@ -17,6 +17,7 @@ vector<string> EnglishDictionary::searchForAnagrams(const string& key) {
 }
 
 EnglishDictionary::EnglishDictionary() {
+
     // LOAD STRINGS -> sort by characters (while keeping original words intact) -> map sorted string to vector of values -> ANAGRAMS
     stringToAnagramsMap;
 }

@@ -12,6 +12,7 @@ using std::string;
 using std::cout;
 using std::endl;
 using std::cerr;
+using std::vector;
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -22,7 +23,7 @@ int main(int argc, char *argv[]) {
     string sorted = MergeSortString::lexicographicSort(origin);
     cout << "After sort: " << sorted << endl;
 
-    std::vector<string> permutations = Permutation::getPermutations("DBCA");
+    vector<string> permutations = Permutation::getPermutations("aadit");
 
     for (int i = 0; i < permutations.size(); ++i) {
         cout << "Permutation " << i << ": " << permutations[i] << endl;

@@ -10,4 +10,5 @@ add_executable(WordGames
         lib/include/Permutation.h
         lib/src/Permutation.cpp
         lib/include/MergeSortString.h
-        lib/src/MergeSortString.cpp)
+        lib/src/MergeSortString.cpp
+        lib/include/AVLMap.h)
