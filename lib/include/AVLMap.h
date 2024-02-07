@@ -8,7 +8,7 @@
 #include <filesystem>
 #include <iostream>
 
-using  fs = std::filesystem;
+using fs = std::filesystem;
 
 template<typename K, typename V>
 class AVLMap {

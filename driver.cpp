@@ -7,6 +7,7 @@
 #include <string>
 #include "./lib/include/MergeSortString.h"
 #include "./lib/include/Permutation.h"
+#include "./lib/include/EnglishDictionary.h"
 
 using std::string;
 using std::cout;
@@ -23,10 +24,15 @@ int main(int argc, char *argv[]) {
     string sorted = MergeSortString::lexicographicSort(origin);
     cout << "After sort: " << sorted << endl;
 
-    vector<string> permutations = Permutation::getPermutations("aadit");
+//    vector<string> permutations = Permutation::getPermutations("aadit");
+//
+//    for (int i = 0; i < permutations.size(); ++i) {
+//        cout << "Permutation " << i << ": " << permutations[i] << endl;
+//    }
 
-    for (int i = 0; i < permutations.size(); ++i) {
-        cout << "Permutation " << i << ": " << permutations[i] << endl;
+    EnglishDictionary dict = EnglishDictionary();
+    vector<string> v = dict.searchForAnagrams("opst");
+    for (const auto & i : v) {
+        cout << i << endl;
     }
-
 }
