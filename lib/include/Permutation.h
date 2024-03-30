@@ -11,11 +11,15 @@
 
 class Permutation {
 private:
-    static void permutationHelper(std::string &permutation, const int &index, const int &end,
-                                  std::unordered_set<std::string> &permutations);
+    static void fullPermutationsHelper(std::string &permutation, const int &index, const int &end);
+    static void substringPermutationsHelper(const std::string& permutation);
 
+    static std::unordered_set<std::string> fullPermutations;
+    static std::unordered_set<std::string> substringPermutations;
 public:
-    static std::vector<std::string> getPermutations(const std::string &word);
+
+    static std::vector<std::string> getFullPermutations(const std::string &word);
+    static std::vector<std::string> getSubstringPermutations(const std::string &word);
 };
 
 #endif //WORDGAMES_PERMUTATION_H
